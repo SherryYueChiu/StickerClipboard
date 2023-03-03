@@ -42,7 +42,7 @@ function showStickerPackList() {
         imgElm.src = `./allSticker/${pack.name}/${thumbnailSticker.name}`;
         imgElm.setAttribute('onclick', `showStickersInPack(${i})`);
         document.querySelector('.stickerPackList').append(imgElm);
-        updateHeaderTitle('');
+        updateHeaderTitle('貼圖剪貼簿');
     });
 }
 
