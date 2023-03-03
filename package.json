@@ -1,0 +1,7 @@
+{
+    "name": "stickerclipboard",
+    "scripts": {
+      "sw": "sw-precache --config=sw-precache-config.js"
+    }
+  }
+  

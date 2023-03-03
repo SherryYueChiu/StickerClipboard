@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+}
+
+.header {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 4rem;
+  background: brown;
+}
+
+.header > .back {
+  display: block;
+  position: absolute;
+  width: 5rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  background: bisque;
+  left: 0.5rem;
+  top: 0.5rem;
+}
+
+.header > .back > * {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: brown;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.header > .title {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: aliceblue;
+}
+
+.container {
+  display: block;
+  position: relative;
+}
+
+.stickerPackList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.stickerList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sticker-preview {
+  width: 22vmin;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.sticker-normal {
+  max-width: 20vmin;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.hide {
+  display: none !important;
+}
+/*# sourceMappingURL=index.css.map */
