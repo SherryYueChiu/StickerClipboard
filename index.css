@@ -69,7 +69,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2rem 0 2rem 0;
+  padding: 1rem 0 2rem 0;
 }
 
 .stickerList {
@@ -88,7 +88,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2rem 0 2rem 0;
+  padding: 1rem 0 2rem 0;
 }
 
 .sticker-preview {
