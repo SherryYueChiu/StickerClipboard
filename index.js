@@ -36,8 +36,8 @@ function showStickerPackList() {
     fileTree.forEach((pack, i) => {
         let thumbnailSticker = pack.children[0];
         let imgElm = document.createElement('img');
-        imgElm.name = pack.name;
-        imgElm.index = i;
+        imgElm.setAttribute('name', pack.name);
+        imgElm.setAttribute('index', i);
         imgElm.classList.add('sticker-preview');
         imgElm.src = `./allSticker/${pack.name}/${thumbnailSticker.name}`;
         imgElm.setAttribute('onclick', `showStickersInPack(${i})`);
@@ -53,7 +53,7 @@ function showStickersInPack(packIndex) {
     $stickerList.innerHTML = '';
     fileTree[packIndex].children.forEach((sticker, i) => {
         let imgElm = document.createElement('img');
-        imgElm.name = sticker.name;
+        imgElm.setAttribute('name', sticker.name);
         imgElm.setAttribute('index', i);
         imgElm.classList.add('sticker-normal');
         imgElm.src = `./allSticker/${fileTree[packIndex].name}/${sticker.name}`;
@@ -72,6 +72,7 @@ function backToStickerPackList() {
     $stickerPackList.classList.remove('hide');
     $stickerList.classList.add('hide');
     toggleBackBottom(false);
+    updateHeaderTitle('貼圖剪貼簿');
 }
 
 function updateHeaderTitle(title) {
