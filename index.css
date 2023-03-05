@@ -93,16 +93,12 @@ body {
 
 .sticker-preview {
   width: 22vmin;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: auto;
 }
 
 .sticker-normal {
   max-width: 20vmin;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: auto;
 }
 
 .hide {
