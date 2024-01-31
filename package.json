@@ -1,7 +1,10 @@
 {
     "name": "stickerclipboard",
     "scripts": {
-      "sw": "sw-precache --config=sw-precache-config.js"
+      "sw": "sw-precache --config=sw-precache-config.js",
+      "downloadSticker":"python crower/stickerDownload.py",
+      "downloadSticon":"python crower/sticonDownload.py",
+      "printFileTree":"python crower/printFileTree.py"
     }
   }
   
