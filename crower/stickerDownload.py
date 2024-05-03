@@ -1,9 +1,9 @@
 import requests
 import os
 
-startId=643889462
-endId=643889501
-folderName='ㄇㄚˊ幾兔－追星篇'
+startId=671996678
+endId=671996717
+folderName='ㄇㄚˊ幾兔ー塗鴉貼圖！'
 
 os.makedirs('./allSticker/'+folderName+'/',exist_ok=True)
 
