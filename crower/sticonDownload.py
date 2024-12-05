@@ -1,8 +1,8 @@
 import requests
 import os
 
-folderName='貓貓蟲-咖波 動態表情貼'
-sticonId='6124aa4ae72c607c18108562'
+folderName='Something small and cute'
+sticonId='6319855a83603436e7d1951d'
 startId=1
 endId=40
 
