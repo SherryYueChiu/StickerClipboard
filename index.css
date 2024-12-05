@@ -9,7 +9,6 @@ body {
   height: 4rem;
   background: brown;
 }
-
 .header > .back {
   display: block;
   position: absolute;
@@ -20,26 +19,22 @@ body {
   left: 0.5rem;
   top: 0.5rem;
 }
-
 .header > .back > * {
   display: block;
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   color: brown;
   font-weight: 600;
   font-size: 1.2rem;
 }
-
 .header > .title {
   display: block;
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   font-size: 1.5rem;
   font-weight: 700;
   color: aliceblue;
@@ -54,45 +49,25 @@ body {
 }
 
 .stickerPackList {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
   padding: 1rem 0 2rem 0;
 }
 
 .stickerList {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
   padding: 1rem 0 2rem 0;
 }
 
 .sticker-preview {
-  width: 22vmin;
+  width: 25vmin;
   height: auto;
 }
 
@@ -103,5 +78,4 @@ body {
 
 .hide {
   display: none !important;
-}
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */
