@@ -1,14 +1,14 @@
 import requests
 import os
 
-folderName='貓貓蟲-咖波 表情貼'
-sticonId='5ad6f009040ab14a7b11d10a'
-startId=1
+folderName='ㄇㄚˊ幾兔－表情貼'
+sticonId='5cbc35d6040ab16170b524e0'
+startId=39
 endId=40
 
 os.makedirs('./allSticker/'+folderName+'/',exist_ok=True)
 
-for stickerId in range(startId,endId):
+for stickerId in range(startId,endId+1):
     stickerId=str(stickerId)
     # static
     url='https://stickershop.line-scdn.net/sticonshop/v1/sticon/'+sticonId+'/iPhone/'+stickerId.zfill(3)+'.png'
