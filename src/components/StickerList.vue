@@ -88,12 +88,14 @@ function conclickSticker(pack: StickerPackData, sticker: OneStickerData) {
   & > .title {
     display: block;
     position: absolute;
-    left: 50%;
+    width: calc(100% - 6rem);
+    left: calc(50% + 3rem);
     top: 50%;
     transform: translate(-50%, -50%);
     font-size: 1.5rem;
     font-weight: 700;
     color: aliceblue;
+    text-align: center;
   }
 }
 .container {
