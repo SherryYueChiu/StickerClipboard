@@ -51,7 +51,7 @@ function conclickSticker(pack: StickerPackData, sticker: OneStickerData) {
       <img
         class="stickerPreview"
         v-for="sticker in selectedPack?.children"
-        :src="`/allSticker/${selectedPack.name}/${sticker.name}`"
+        :src="`/allSticker/${selectedPack.name}/${sticker.name}?${new Date().getTime()}`"
         @click="conclickSticker(selectedPack, sticker)"
       />
     </div>

@@ -36,7 +36,7 @@ function launchStickerPack(stickerPack: StickerPackData) {
       <img
         class="stickerPreview"
         v-for="stickerPack in stickerDataLib.children"
-        :src="`/allSticker/${stickerPack.name}/${stickerPack.children[0].name}`"
+        :src="`/allSticker/${stickerPack.name}/${stickerPack.children[0].name}?${new Date().getTime()}`"
         @click="launchStickerPack(stickerPack)"
       />
     </div>
