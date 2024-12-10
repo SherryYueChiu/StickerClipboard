@@ -20,7 +20,11 @@ onMounted(() => {
 
 function reloadGifs() {
   document.querySelectorAll("img").forEach((img) => {
-    img.src = img.src + "?" + new Date().getTime();
+    const src = img.src;
+    img.removeAttribute("src");
+    // setTimeout(() => {
+      img.src = src;
+    // }, 20);
   });
 }
 
@@ -51,7 +55,7 @@ function conclickSticker(pack: StickerPackData, sticker: OneStickerData) {
       <img
         class="stickerPreview"
         v-for="sticker in selectedPack?.children"
-        :src="`/allSticker/${selectedPack.name}/${sticker.name}?${new Date().getTime()}`"
+        :src="`/allSticker/${selectedPack.name}/${sticker.name}`"
         @click="conclickSticker(selectedPack, sticker)"
       />
     </div>

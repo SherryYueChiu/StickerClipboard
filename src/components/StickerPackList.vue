@@ -17,7 +17,11 @@ onMounted(() => {
 
 function reloadGifs() {
   document.querySelectorAll("img").forEach((img) => {
-    img.src = img.src + "?" + new Date().getTime();
+    const src = img.src;
+    img.removeAttribute("src");
+    // setTimeout(() => {
+      img.src = src;
+    // }, 20);
   });
 }
 
@@ -36,7 +40,7 @@ function launchStickerPack(stickerPack: StickerPackData) {
       <img
         class="stickerPreview"
         v-for="stickerPack in stickerDataLib.children"
-        :src="`/allSticker/${stickerPack.name}/${stickerPack.children[0].name}?${new Date().getTime()}`"
+        :src="`/allSticker/${stickerPack.name}/${stickerPack.children[0].name}`"
         @click="launchStickerPack(stickerPack)"
       />
     </div>
