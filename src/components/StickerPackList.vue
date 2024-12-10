@@ -95,7 +95,6 @@ function launchStickerPack(stickerPack: StickerPackData) {
 
 .stickerPreview {
   width: 25%;
-  min-width: 150px;
   max-width: 150px;
   height: auto;
 }

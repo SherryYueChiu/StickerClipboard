@@ -110,7 +110,6 @@ function conclickSticker(pack: StickerPackData, sticker: OneStickerData) {
 
 .stickerPreview {
   width: 25%;
-  min-width: 150px;
   max-width: 150px;
   height: auto;
 }
