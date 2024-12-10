@@ -4,12 +4,25 @@ import StickerList from './components/StickerList.vue';
 
 const routes = [
   {
-    path: '/', name: 'StickerPackList', component: StickerPackList
+    path: '/',
+    name: 'StickerPackList',
+    component: StickerPackList,
+    beforeEnter: (to, _, next) => {
+      if (to.query.view === 'StickerList') {
+        next({ name: 'StickerList', query: to.query });
+      } else {
+        next();
+      }
+    }
   },
   {
-    path: '/sticker', name: 'StickerList', component: StickerList
+    path: '/',
+    name: 'StickerList',
+    component: StickerList,
+    props: true
   },
 ];
+
 
 const router = createRouter({
   history: createWebHistory(),

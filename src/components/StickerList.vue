@@ -9,7 +9,7 @@ import { StickerPackData, OneStickerData } from "../type.ts";
 const router = useRouter();
 
 if (!selectedPack.value) {
-  router.replace({ name: "StickerPackList" });
+  router.replace({ name: "StickerPackList", query: { view: "StickerPackList" } });
 }
 
 onMounted(() => {
@@ -18,10 +18,10 @@ onMounted(() => {
   stickerImageReloadTimer.value = setInterval(reloadGifs, 10000);
 });
 
-function reloadGifs(){
-    document.querySelectorAll("img").forEach((img) => {
-      img.src = img.src + "?" + new Date().getTime();
-    });
+function reloadGifs() {
+  document.querySelectorAll("img").forEach((img) => {
+    img.src = img.src + "?" + new Date().getTime();
+  });
 }
 
 function routerBack() {

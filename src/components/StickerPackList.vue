@@ -23,7 +23,7 @@ function reloadGifs() {
 
 function launchStickerPack(stickerPack: StickerPackData) {
   selectedPack.value = stickerPack;
-  router.push({ name: "StickerList" });
+  router.push({ name: "StickerList", query: { view: "StickerList" } });
 }
 </script>
 
