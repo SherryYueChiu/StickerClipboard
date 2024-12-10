@@ -1,1 +1,3 @@
-# StickerClipboard
+# Otohime（音姬）
+
+在上廁所時播放流水聲掩飾聲音
