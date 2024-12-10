@@ -1,6 +1,7 @@
 module.exports = {
     staticFileGlobs: [
         '**.*',
+        '**/**.*',
     ],
     runtimeCaching: [{
         urlPattern: /.*/,
