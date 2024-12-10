@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import { onMounted, ref } from "vue";
+import { onMounted } from "vue";
 import { useRouter } from "vue-router";
 import * as _stickerDataLib from "../stickerFileTree.json";
-import { StickerPackData } from "../type.ts";
+import { StickerPackData, StickerDataLib } from "../type.ts";
 import { selectedPack } from "../store.ts";
 
 const router = useRouter();
 const stickerDataLib: StickerDataLib =
-  _stickerDataLib.default as StickerDataLib;
+  (_stickerDataLib as any)?.default as StickerDataLib;
 
 onMounted(() => {
   // 10秒自動重播

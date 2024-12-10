@@ -1,14 +1,12 @@
 <script setup lang="ts">
-import { onMounted, ref } from "vue";
+import { onMounted } from "vue";
 import { useRouter } from "vue-router";
 import { copyImageToClipboard } from "copy-image-clipboard";
 import * as _stickerDataLib from "../stickerFileTree.json";
 import { selectedPack } from "../store.ts";
-import { StickerDataLib, OneStickerData } from "../type.ts";
+import { StickerPackData, OneStickerData } from "../type.ts";
 
 const router = useRouter();
-const stickerDataLib: StickerDataLib =
-  _stickerDataLib.default as StickerDataLib;
 
 if (!selectedPack.value) {
   router.replace({ name: "StickerPackList" });
