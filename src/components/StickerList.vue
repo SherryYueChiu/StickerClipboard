@@ -3,7 +3,7 @@ import { onMounted } from "vue";
 import { useRouter } from "vue-router";
 import { copyImageToClipboard } from "copy-image-clipboard";
 import * as _stickerDataLib from "../stickerFileTree.json";
-import { selectedPack } from "../store.ts";
+import { stickerImageReloadTimer, selectedPack } from "../store.ts";
 import { StickerPackData, OneStickerData } from "../type.ts";
 
 const router = useRouter();
@@ -14,12 +14,15 @@ if (!selectedPack.value) {
 
 onMounted(() => {
   // 10秒自動重播
-  setInterval(() => {
+  clearInterval(stickerImageReloadTimer.value);
+  stickerImageReloadTimer.value = setInterval(reloadGifs, 10000);
+});
+
+function reloadGifs(){
     document.querySelectorAll("img").forEach((img) => {
       img.src = img.src + "?" + new Date().getTime();
     });
-  }, 10000);
-});
+}
 
 function routerBack() {
   router.go(-1);

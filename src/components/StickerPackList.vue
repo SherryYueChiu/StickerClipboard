@@ -3,20 +3,23 @@ import { onMounted } from "vue";
 import { useRouter } from "vue-router";
 import * as _stickerDataLib from "../stickerFileTree.json";
 import { StickerPackData, StickerDataLib } from "../type.ts";
-import { selectedPack } from "../store.ts";
+import { packImageReloadTimer, selectedPack } from "../store.ts";
 
 const router = useRouter();
-const stickerDataLib: StickerDataLib =
-  (_stickerDataLib as any)?.default as StickerDataLib;
+const stickerDataLib: StickerDataLib = (_stickerDataLib as any)
+  ?.default as StickerDataLib;
 
 onMounted(() => {
   // 10秒自動重播
-  setInterval(() => {
-    document.querySelectorAll("img").forEach((img) => {
-      img.src = img.src + "?" + new Date().getTime();
-    });
-  }, 10000);
+  clearInterval(packImageReloadTimer.value);
+  packImageReloadTimer.value = setInterval(reloadGifs, 10000);
 });
+
+function reloadGifs() {
+  document.querySelectorAll("img").forEach((img) => {
+    img.src = img.src + "?" + new Date().getTime();
+  });
+}
 
 function launchStickerPack(stickerPack: StickerPackData) {
   selectedPack.value = stickerPack;

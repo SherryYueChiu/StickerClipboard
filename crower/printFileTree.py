@@ -37,8 +37,8 @@ def to_unicode(tree):
 
 if __name__ == '__main__':
     root_path = os.getcwd()
-    tree = generate_tree(root_path+'/allSticker/')
+    tree = generate_tree(root_path+'/public/allSticker/')
     unicode_tree = to_unicode(tree)
     unicode_tree['name'] = 'all'
-    with open('stickerFileTree.json', 'w', encoding='utf-8') as f:
+    with open('./src/stickerFileTree.json', 'w', encoding='utf-8') as f:
         json.dump(unicode_tree, f, ensure_ascii=False, indent=4)
