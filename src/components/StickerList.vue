@@ -9,7 +9,10 @@ import { StickerPackData, OneStickerData } from "../type.ts";
 const router = useRouter();
 
 if (!selectedPack.value) {
-  router.replace({ name: "StickerPackList", query: { view: "StickerPackList" } });
+  router.replace({
+    name: "StickerPackList",
+    query: { view: "StickerPackList" },
+  });
 }
 
 onMounted(() => {
@@ -23,7 +26,7 @@ function reloadGifs() {
     const src = img.src;
     img.removeAttribute("src");
     // setTimeout(() => {
-      img.src = src;
+    img.src = src;
     // }, 20);
   });
 }
@@ -107,6 +110,8 @@ function conclickSticker(pack: StickerPackData, sticker: OneStickerData) {
   position: relative;
   height: 100vh;
   overflow-y: auto;
+  background: #fff;
+  animation: grayscaleBackground 10s infinite;
 }
 .stickerPackList {
   display: flex;
@@ -121,5 +126,16 @@ function conclickSticker(pack: StickerPackData, sticker: OneStickerData) {
   width: 25%;
   max-width: 150px;
   height: auto;
+}
+@keyframes grayscaleBackground {
+  0% {
+    background: #fff;
+  }
+  50% {
+    background: #000;
+  }
+  100% {
+    background: #fff;
+  }
 }
 </style>
