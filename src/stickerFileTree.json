@@ -1177,6 +1177,14 @@
                     "type": "file"
                 },
                 {
+                    "name": "B039.png",
+                    "type": "file"
+                },
+                {
+                    "name": "B040.png",
+                    "type": "file"
+                },
+                {
                     "name": "C001.png",
                     "type": "file"
                 },
@@ -1469,6 +1477,18 @@
                     "type": "file"
                 },
                 {
+                    "name": "D067.png",
+                    "type": "file"
+                },
+                {
+                    "name": "D068.png",
+                    "type": "file"
+                },
+                {
+                    "name": "D069.png",
+                    "type": "file"
+                },
+                {
                     "name": "E001.png",
                     "type": "file"
                 },
@@ -1641,6 +1661,10 @@
                     "type": "file"
                 },
                 {
+                    "name": "F025.png",
+                    "type": "file"
+                },
+                {
                     "name": "G001.png",
                     "type": "file"
                 },
@@ -1726,6 +1750,34 @@
                 },
                 {
                     "name": "G022.png",
+                    "type": "file"
+                },
+                {
+                    "name": "G023.png",
+                    "type": "file"
+                },
+                {
+                    "name": "G024.png",
+                    "type": "file"
+                },
+                {
+                    "name": "G025.png",
+                    "type": "file"
+                },
+                {
+                    "name": "G026.png",
+                    "type": "file"
+                },
+                {
+                    "name": "G027.png",
+                    "type": "file"
+                },
+                {
+                    "name": "G028.png",
+                    "type": "file"
+                },
+                {
+                    "name": "G029.png",
                     "type": "file"
                 },
                 {
