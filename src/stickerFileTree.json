@@ -4573,6 +4573,172 @@
             ]
         },
         {
+            "name": "ㄇㄚˊ幾兔－表情貼2",
+            "type": "directory",
+            "children": [
+                {
+                    "name": "1.png",
+                    "type": "file"
+                },
+                {
+                    "name": "10.png",
+                    "type": "file"
+                },
+                {
+                    "name": "11.png",
+                    "type": "file"
+                },
+                {
+                    "name": "12.png",
+                    "type": "file"
+                },
+                {
+                    "name": "13.png",
+                    "type": "file"
+                },
+                {
+                    "name": "14.png",
+                    "type": "file"
+                },
+                {
+                    "name": "15.png",
+                    "type": "file"
+                },
+                {
+                    "name": "16.png",
+                    "type": "file"
+                },
+                {
+                    "name": "17.png",
+                    "type": "file"
+                },
+                {
+                    "name": "18.png",
+                    "type": "file"
+                },
+                {
+                    "name": "19.png",
+                    "type": "file"
+                },
+                {
+                    "name": "2.png",
+                    "type": "file"
+                },
+                {
+                    "name": "20.png",
+                    "type": "file"
+                },
+                {
+                    "name": "21.png",
+                    "type": "file"
+                },
+                {
+                    "name": "22.png",
+                    "type": "file"
+                },
+                {
+                    "name": "23.png",
+                    "type": "file"
+                },
+                {
+                    "name": "24.png",
+                    "type": "file"
+                },
+                {
+                    "name": "25.png",
+                    "type": "file"
+                },
+                {
+                    "name": "26.png",
+                    "type": "file"
+                },
+                {
+                    "name": "27.png",
+                    "type": "file"
+                },
+                {
+                    "name": "28.png",
+                    "type": "file"
+                },
+                {
+                    "name": "29.png",
+                    "type": "file"
+                },
+                {
+                    "name": "3.png",
+                    "type": "file"
+                },
+                {
+                    "name": "30.png",
+                    "type": "file"
+                },
+                {
+                    "name": "31.png",
+                    "type": "file"
+                },
+                {
+                    "name": "32.png",
+                    "type": "file"
+                },
+                {
+                    "name": "33.png",
+                    "type": "file"
+                },
+                {
+                    "name": "34.png",
+                    "type": "file"
+                },
+                {
+                    "name": "35.png",
+                    "type": "file"
+                },
+                {
+                    "name": "36.png",
+                    "type": "file"
+                },
+                {
+                    "name": "37.png",
+                    "type": "file"
+                },
+                {
+                    "name": "38.png",
+                    "type": "file"
+                },
+                {
+                    "name": "39.png",
+                    "type": "file"
+                },
+                {
+                    "name": "4.png",
+                    "type": "file"
+                },
+                {
+                    "name": "40.png",
+                    "type": "file"
+                },
+                {
+                    "name": "5.png",
+                    "type": "file"
+                },
+                {
+                    "name": "6.png",
+                    "type": "file"
+                },
+                {
+                    "name": "7.png",
+                    "type": "file"
+                },
+                {
+                    "name": "8.png",
+                    "type": "file"
+                },
+                {
+                    "name": "9.png",
+                    "type": "file"
+                }
+            ]
+        },
+        {
             "name": "ㄇㄚˊ幾兔－訊息貼圖",
             "type": "directory",
             "children": [
